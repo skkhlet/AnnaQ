@@ -1,0 +1,271 @@
+/* ===== RESET ===== */
+
+@font-face {
+    font-family: "Zanjabeel";
+    src: url("../assets/fonts/Zanjabeel-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Zanjabeel-Regular", sans-serif;
+    background: linear-gradient(180deg, #020617 0%, #1e293b 100%);
+    color: #e2e8f0;
+    overflow: hidden;
+}
+
+/* ===== SCREEN ===== */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    position: relative;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+/* ===== BUTTON STYLE (matches figma) ===== */
+.btn-outline {
+    padding: 12px 28px;
+    border-radius: 999px;
+    border: 1px solid #ff7849;
+    background: transparent;
+    color: #ff7849;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-outline:hover {
+    background: rgba(255, 120, 73, 0.1);
+}
+
+/* Press */
+.btn-outline:active {
+    transform: scale(0.95);
+    background: rgba(255, 120, 73, 0.2);
+}
+
+/* Center button (bottom) */
+.center-btn {
+    display: block;
+    margin: 40px auto 0;
+}
+
+/* ===== CAROUSEL VIEW ===== */
+.carousel-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 100px;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    justify-content: center;
+}
+
+/* Hide scrollbar (kiosk feel) */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===== CARD ===== */
+.card {
+    min-width: 320px;
+    height: 220px;
+
+    border-radius: 25px; /* or 30px if you want softer */
+    overflow: hidden;    /* VERY IMPORTANT */
+
+    scroll-snap-align: center;
+
+    transform: scale(0.85);
+    opacity: 0.4;
+     border-color: #ff7849;
+    transition: all 0.35s ease;
+}
+
+/* Active (center card like figma) */
+.card.active {
+    transform: scale(1.2);
+    opacity: 1;
+    border-color: #ff7849;
+
+    box-shadow: 0 0 25px rgba(255, 120, 73, 0.3);
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+/* Overlay text */
+.card-text {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.card-text h2 {
+    font-size: 20px;
+}
+
+/* ===== DETAILS VIEW ===== */
+.details-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Big card */
+.details-card {
+    width: 70%;
+    padding: 40px;
+    border-radius: 30px;
+
+    background: linear-gradient(145deg, #020617, #0f172a);
+    border: 1px solid rgba(255, 120, 73, 0.4);
+
+    display: flex;
+    gap: 40px;
+}
+
+/* Images */
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.images img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Text */
+.text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+/* ===== LIST VIEW ===== */
+.list-view {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* List Card */
+.list-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+    background: #0f172a;
+    border: 1px solid rgba(255, 120, 73, 0.2);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.list-card:hover {
+    transform: scale(1.02);
+}
+
+/* QR placeholder */
+.qr {
+    width: 80px;
+    height: 80px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image */
+.list-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+/* Text */
+.list-card .text {
+    text-align: center;
+}
+
+/* Persistent microphone indicator */
+.mic-indicator {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3b82f6;  /* blue when listening */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default; /* no click action */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.mic-indicator.grey {
+    background-color: #9ca3af; /* grey when not listening */
+}
+
+.mic-indicator i {
+    font-size: 28px;
+    color: white;
+}
