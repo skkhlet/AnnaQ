@@ -2,7 +2,7 @@
 
 > **A culturally-aware AI tourism companion that transforms destination discovery into an interactive, personalized conversation.**
 
-![Annaq Preview](assets/Images/annaq-workflow.jpg)
+![Annaq Preview](.jpg)
 
 ## Overview
 
