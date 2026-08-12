@@ -47,8 +47,7 @@ The goal was not simply to build another chatbot, but to create a **personality-
 
 ## How It Works
 
-![How Annaq Works](assets/diagrams/annaq-workflow.png)
-<img width="900" height="718" alt="image" src="https://github.com/user-attachments/assets/fbd40796-c336-4001-9ca4-753587977673" />
+![How Annaq Works](assets/images/annaq-workflow.jpg)
 
 ### 1. User Interaction
 
