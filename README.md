@@ -200,7 +200,7 @@ The visual identity uses reddish and sandy tones inspired by the animal and its 
 
 ### Main Interface
 
-![Annaq Main Interface](assets/Images/صورة3.png)
+![Annaq Main Interface](assets/Images/صورة2.png)
 
 ### Conversation
 
@@ -208,7 +208,7 @@ The visual identity uses reddish and sandy tones inspired by the animal and its 
 
 ### Personalized Recommendations
 
-![Recommendation Cards](assets/Images/صورة2.png)
+![Recommendation Cards](assets/Images/صورة2.jpg)
 
 ### Destination Details
 
