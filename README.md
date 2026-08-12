@@ -59,23 +59,13 @@ Annaq processes the conversation and extracts useful information such as the vis
 
 Computer vision can also provide contextual information such as facial emotion.
 
-### 3. Context Building
-
-The extracted information is converted into a contextual representation that can be passed to the recommendation system.
-
-### 4. Adaptive Recommendation
+### 3. Adaptive Recommendation
 
 The recommender evaluates available destinations using a hybrid approach combining **LinUCB (Contextual Bandits)** with static similarity.
 
-### 5. Personalized Results
+### 4. Personalized Results
 
 Annaq presents the highest-ranked destinations through interactive recommendation cards.
-
-### 6. User Feedback
-
-Visitors can interact with recommendations using the feedback controls.
-
-Positive feedback can update the recommender, allowing future recommendations to become more relevant.
 
 ---
 
@@ -194,56 +184,6 @@ The implemented recommender works with approximately **200 destinations**, uses 
 
 ---
 
-## System Architecture
-
-![Annaq System Architecture](assets/diagrams/system-architecture.png)
-
-Annaq consists of several interconnected components:
-
-```text
-                    ┌──────────────────┐
-                    │      Visitor     │
-                    └────────┬─────────┘
-                             │
-                    Voice / Touch / Camera
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   Annaq Frontend │
-                    └────────┬─────────┘
-                             │
-                       Real-Time
-                       Communication
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   Annaq Agent    │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              ▼              ▼              ▼
-          LLM / NLP      Computer       Context
-                         Vision          Extraction
-              │              │              │
-              └──────────────┼──────────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   Recommender    │
-                    │ LinUCB + Similarity│
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    Personalized Places
-                             │
-                             ▼
-                         Feedback
-                             │
-                             └──────► Model Update
-```
-
----
-
 ## Design & Identity
 
 Annaq's identity was inspired by the **Caracal**, known in Arabic as *Annaq Al-Ard*.
@@ -256,7 +196,7 @@ The visual identity uses reddish and sandy tones inspired by the animal and its 
 
 ---
 
-## Screenshots
+## Interface Design
 
 ### Main Interface
 
