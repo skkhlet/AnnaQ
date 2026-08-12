@@ -69,6 +69,17 @@ Annaq presents the highest-ranked destinations through interactive recommendatio
 
 ---
 
+## Key Features
+### 🤖 Conversational AI
+### 🇸🇦 Saudi Personality
+### 🎯 Personalized Recommendations
+### 🧠 Adaptive Recommender
+### 👁️ Computer Vision
+### 🎙️ Voice Interaction
+### ⚡ Real-Time Interaction
+### 🗺️ Destination Exploration
+---
+
 ## My Role
 
 ### Team Lead · Frontend Developer · AI & Recommender Developer
@@ -76,73 +87,22 @@ Annaq presents the highest-ranked destinations through interactive recommendatio
 #### Team Leadership
 
 * Coordinated the development process across different project components
-* Distributed and followed up on development tasks
-* Helped connect the work of different team members
 * Contributed to system-level decisions and integration
 
 #### Frontend Development
 
 * Worked on the interactive kiosk interface
-* Implemented the user interaction flow
-* Worked on displaying Annaq's responses and recommendation cards
 * Contributed to the overall user experience of the system
 
 #### Web & System Integration
 
 * Connected the frontend with the backend and AI components
 * Worked on communication between the web interface and Annaq's agent
-* Integrated the recommendation results into the frontend experience
-* Worked with real-time communication between the browser and backend
-
-#### AI Agent Integration
-
-* Worked on integrating Annaq's conversational agent with the rest of the system
-* Connected natural-language understanding with the recommendation pipeline
-* Worked with extracting information such as **city and mood** from user conversations
-* Helped maintain Annaq's Saudi Arabic personality and conversational behavior
-
+* 
 #### Recommender System
 
 * Worked on the adaptive recommendation mechanism using **LinUCB**
-* Worked with contextual user information and destination features
-* Integrated user feedback into the recommendation process
 * Contributed to the hybrid recommendation approach combining LinUCB with static similarity
-
----
-
-## Key Features
-
-### 🤖 Conversational AI
-
-Annaq understands natural-language input and responds conversationally rather than relying only on predefined buttons.
-
-### 🇸🇦 Saudi Personality
-
-Annaq was designed with a culturally authentic Saudi identity, including a friendly Saudi Arabic conversational style.
-
-### 🎯 Personalized Recommendations
-
-Recommendations are generated based on contextual information such as the user's city, mood, and preferences.
-
-### 🧠 Adaptive Recommender
-
-The hybrid **LinUCB + static similarity** recommender can learn from user feedback while still providing reasonable recommendations for new interactions.
-
-### 👁️ Computer Vision
-
-Facial analysis is used to detect contextual information such as gender and emotion.
-
-### 🎙️ Voice Interaction
-
-Speech recognition allows visitors to communicate with Annaq naturally.
-
-### ⚡ Real-Time Interaction
-
-The frontend and backend communicate through Socket.IO, allowing text, audio, and visual elements to be synchronized during the interaction.
-
-### 🗺️ Destination Exploration
-
-Users can explore recommended destinations, view additional information, and open their location through Google Maps.
 
 ---
 
@@ -202,17 +162,9 @@ The visual identity uses reddish and sandy tones inspired by the animal and its 
 
 ![Annaq Main Interface](assets/Images/صورة2.png)
 
-### Conversation
-
-![Annaq Conversation](assets/screenshots/conversation.png)
-
 ### Personalized Recommendations
 
-![Recommendation Cards](assets/Images/صورة2.jpg)
-
-### Destination Details
-
-![Destination Details](assets/screenshots/place-details.png)
+![Recommendation Cards](assets/Images/صورة3.jpg)
 
 ---
 
@@ -263,14 +215,7 @@ The demo demonstrates the complete interaction flow, from the initial greeting a
 
 ---
 
-## Challenges & Solutions
-
-### Making Recommendations Useful from the First Interaction
-
-A pure learning-based recommender can struggle when there is little previous feedback.
-
-**Solution:**
-We combined LinUCB with a static similarity score to provide sensible recommendations even during the cold-start stage.
+## Main Challenge & Solution
 
 ### Connecting Multiple AI Components
 
@@ -279,54 +224,13 @@ Annaq combines conversational AI, speech recognition, text-to-speech, computer v
 **Solution:**
 We designed the system as interconnected modules and used real-time communication to synchronize the different components.
 
-### Real-Time Performance
-
-The system needed to provide recommendations quickly enough to maintain a smooth interaction.
-
-**Result:**
-Testing showed an average overall response time of approximately **3.2–3.4 seconds**, remaining below the project's 5-second requirement.
-
----
-
-## Testing & Results
-
-Annaq was evaluated through unit, integration, system, and acceptance testing.
-
-The final acceptance tests covered:
-
-* Voice-based recommendations
-* Destination details
-* User feedback
-* Conversational small talk
-* Session termination
-* Response performance
-
-The average response time was approximately **3.2 seconds**, meeting the project's performance requirement.
-
-The system also successfully demonstrated the integration of:
-
-* Whisper speech recognition
-* Llama 4 conversational AI
-* Orpheus text-to-speech
-* DeepFace computer vision
-* Hybrid LinUCB recommendation
-* Socket.IO real-time communication
-
 ---
 
 ## Future Improvements
 
-### 🌍 Multilingual Support
-
-Add English, Urdu, and French interfaces with automatic language switching.
-
 ### 👧 Child-Aware Interaction
 
 Use age estimation to adapt vocabulary, tone, and interaction style for younger visitors.
-
-### 🌤️ Context-Aware Recommendations
-
-Integrate real-time weather and location data to recommend destinations based on current conditions.
 
 ### 📅 Event Awareness
 
@@ -348,11 +252,7 @@ I learned how to:
 * Integrate AI components into a real interactive application
 * Connect frontend and backend systems
 * Work with conversational AI and LLM APIs
-* Build and integrate an adaptive recommender
-* Work with contextual bandit algorithms
 * Design an AI experience around a specific cultural identity
 * Handle real-time communication between system components
-* Think about AI privacy and deployment constraints
-* Test and validate an integrated AI system
 
 Most importantly, Annaq taught me how different technical components need to work together as **one user experience**, rather than existing as isolated features.
